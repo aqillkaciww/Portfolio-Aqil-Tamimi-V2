@@ -42,7 +42,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  pretitle: 'Available for craft-driven projects',
+  pretitle: '</> Hello World!',
   titleLeading: "Crafting digital spaces with a",
   titleAccent: "painter's touch",
   titleTrailing: "and a developer's precision.",

@@ -20,7 +20,7 @@
       </div>
 
       <!-- Image -->
-      <div class="about-grid">
+      <!-- <div class="about-grid">
         <div class="about-img about-img-main">
           <div class="img-placeholder img-desk">
             <div class="desk-scene">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="about-sparkle">✦</div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
