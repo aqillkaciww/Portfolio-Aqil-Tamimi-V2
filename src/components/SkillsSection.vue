@@ -4,7 +4,7 @@
       <div class="section-header">
         <h2 class="section-title center">Tech Stack</h2>
         <p class="section-subtitle">
-        Teknologi yang saya gunakan dalam pengembangan website yang interaktif juga responsif.
+          Teknologi yang saya gunakan dalam pengembangan website yang interaktif juga responsif.
         </p>
       </div>
 
@@ -13,22 +13,7 @@
           <div class="skill-icon" :style="{ backgroundColor: skill.bgColor }">
             <span class="skill-icon-text">{{ skill.icon }}</span>
           </div>
-          <div class="skill-body">
-            <h3 class="skill-name">{{ skill.name }}</h3>
-            <p class="skill-desc">{{ skill.desc }}</p>
-            <div class="skill-tags">
-              <span v-for="tag in skill.tags" :key="tag" class="skill-tag">{{ tag }}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Highlight Card -->
-        <div class="skill-card skill-card-highlight">
-          <div class="skill-highlight-icon">⚡</div>
-          <h3 class="skill-name">Quick Learner</h3>
-          <p class="skill-desc">
-            Passionate about the craft and always finding new tools. From bleeding-edge frameworks to classic design fundamentals.
-          </p>
+          <h3 class="skill-name">{{ skill.name }}</h3>
         </div>
       </div>
     </div>
@@ -40,45 +25,38 @@ interface Skill {
   name: string
   icon: string
   bgColor: string
-  desc: string
-  tags: string[]
 }
 
 const skills: Skill[] = [
   {
-    name: 'React & Next.js',
-    icon: '⚛',
-    bgColor: 'rgba(97,218,251,0.12)',
-    desc: 'Building modern, high-performance applications that bring joy to both developers and end users.',
-    tags: ['Components', 'App Router', 'SSR']
+    name: 'Next.js',
+    icon: 'Next',
+    bgColor: 'rgba(54,65,89,0.08)',
   },
   {
-    name: 'Vue.js',
-    icon: '◈',
-    bgColor: 'rgba(66,184,131,0.12)',
-    desc: 'Crafting reactive interfaces with clean and thoughtful compositions for seamless user experiences.',
-    tags: ['Vue 3', 'Composition API', 'Vite']
+    name: 'Tailwind',
+    icon: 'TW',
+    bgColor: 'rgba(56,189,248,0.14)',
   },
   {
-    name: 'Tailwind CSS',
-    icon: '🎨',
-    bgColor: 'rgba(56,189,248,0.12)',
-    desc: 'Translating visual concepts into pixel-perfect, accessible, and responsive designs with precision.',
-    tags: ['Responsive', 'Animations', 'Dark Mode']
+    name: 'Laravel',
+    icon: 'Lv',
+    bgColor: 'rgba(245,101,101,0.14)',
   },
   {
     name: 'TypeScript',
     icon: 'TS',
-    bgColor: 'rgba(49,120,198,0.12)',
-    desc: 'Writing strong, maintainable code that scales with confidence through robust type safety.',
-    tags: ['Type Safety', 'Generics', 'Interfaces']
+    bgColor: 'rgba(49,120,198,0.14)',
   },
   {
-    name: 'UI/UX Design',
-    icon: '✦',
-    bgColor: 'rgba(167,139,250,0.12)',
-    desc: 'Bridging the gap between aesthetics and functionality — designing experiences that feel intuitive.',
-    tags: ['Figma', 'Wireframing', 'Prototyping']
-  }
+    name: 'HTML',
+    icon: '</>',
+    bgColor: 'rgba(251,146,60,0.14)',
+  },
+  {
+    name: 'CSS',
+    icon: 'CSS',
+    bgColor: 'rgba(56,189,248,0.14)',
+  },
 ]
 </script>

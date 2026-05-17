@@ -4,19 +4,20 @@
       <div class="hero-copy">
         <span class="hero-label">{{ props.pretitle }}</span>
         <h1 class="hero-title">
-          {{ props.titleLeading }} <br> <span>{{ props.titleTrailing }}</span>
+          {{ props.titleLeading }} <br />
+          <span>{{ props.titleTrailing }}</span>
         </h1>
         <p class="hero-description">{{ props.description }}</p>
 
         <div class="hero-actions">
-          <button class="hero-button hero-button-primary" @click="handlePrimaryClick">{{ props.primaryAction }}</button>
-          <button class="hero-button hero-button-secondary" @click="handleSecondaryClick">{{ props.secondaryAction }}</button>
+          <a class="hero-button hero-button-primary" href="#skills">{{ props.primaryAction }}</a>
+          <a class="hero-button hero-button-secondary" href="#projects">{{props.secondaryAction}}</a>
         </div>
       </div>
 
       <div class="hero-card">
-        <img src="/ijinkompe.png" alt="Aqil Tamimi" class="hero-photo"/>
-          <!-- <div class="art-card">
+        <img src="/hero-image-1.jpg" alt="Aqil Tamimi" class="hero-photo" />
+        <!-- <div class="art-card">
             <div class="art-sky"></div>
             <div class="art-cloud art-cloud-1"></div>
             <div class="art-cloud art-cloud-2"></div>
@@ -24,7 +25,7 @@
             <div class="art-forest"></div>
             <div class="art-house"></div>
           </div> -->
-        <div class="hero-quote">"I can't lose, I'm chosen!"</div>
+        <div class="hero-quote">"Setiap detail memiliki arti, setiap interaksi memiliki tujuan."</div>
       </div>
     </div>
   </section>
@@ -32,21 +33,21 @@
 
 <script setup lang="ts">
 interface Props {
-  pretitle?: string;
-  titleLeading?: string;
-  titleTrailing?: string;
-  description?: string;
-  primaryAction?: string;
-  secondaryAction?: string;
+  pretitle?: string
+  titleLeading?: string
+  titleTrailing?: string
+  description?: string
+  primaryAction?: string
+  secondaryAction?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   pretitle: '</> Hello World!',
-  titleLeading: "Designing the future,",
-  titleTrailing: "one line at a time.",
+  titleLeading: 'Every detail has meaning,',
+  titleTrailing: 'every interaction has a purpose.',
   description:
-    'I am a Frontend Developer specializing in building serene, highly-functional web experiences that feel as warm as a hand-drawn illustration.',
+    'Saya adalah seorang Frontend Developer yang berfokus pada pengembangan web yang interaktif, fungsional, dan nyaman digunakan.',
   primaryAction: 'Skills',
-  secondaryAction: 'Projects'
-});
+  secondaryAction: 'Projects',
+})
 </script>
