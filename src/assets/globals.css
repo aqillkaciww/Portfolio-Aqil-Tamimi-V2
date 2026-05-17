@@ -16,7 +16,7 @@ body {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Source Sans Pro', sans-serif;
-  background-color: #f5f1ed;
+  background-color: #fcf3eb;
 }
 
 #app {
@@ -105,8 +105,7 @@ main {
 }
 
 .hero-button-primary:hover {
-  background-color: #234f32;
-  transform: translateY(-1px);
+  background-color: #2b5f3d;
 }
 
 .hero-button-secondary {
@@ -254,6 +253,19 @@ a,
   }
 }
 
+.logo-link {
+  padding: 0;
+  background-color: transparent ;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  background-color: transparent ;
+  color: #811515;
+  transition: color 0.3s ease;
+}
+
 .header {
   width: 100%;
   background-color: rgba(245, 241, 237, 0.95);
@@ -281,11 +293,17 @@ a,
 }
 
 .head-name {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: bolder;
   color: #202020;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.head-name:hover {
+  color: #252b22;
+  transition: color 0.2s ease;
 }
 
 .nav-menu {
@@ -310,19 +328,17 @@ a,
 
 .nav-link {
   text-decoration: none;
-  color: #353535;
+  color: #1b2e15;
   font-size: 0.94rem;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.02em;
   padding: 10px 8px;
   border-radius: 999px;
-  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #1d472d;
-  background-color: rgba(123, 155, 95, 0.12);
-  transform: translateY(-1px);
+  color: #366145;
+  background-color: transparent;
 }
 
 .cta-button {
@@ -341,45 +357,43 @@ a,
 
 .cta-button:hover {
   background-color: #2b6a43;
+  transition: all 0.35s ease;
+}
+
+/* Download button styling (replaces CTA visually) */
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 8px;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+}
+
+.download-button .download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button svg {
+  color: currentColor;
+}
+
+.download-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
   transform: translateY(-1px);
-}
-
-@media (max-width: 940px) {
-  .header {
-    padding: 18px 20px;
-  }
-
-  .header-container {
-    gap: 18px;
-  }
-
-  .nav-list {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 720px) {
-  .header-container {
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-between;
-  }
-
-  .nav-menu {
-    width: 100%;
-    order: 3;
-    justify-content: flex-start;
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-    gap: 14px;
-    justify-content: flex-start;
-  }
-
-  .cta-button {
-    width: 100%;
-    justify-self: stretch;
-    padding: 14px 18px;
-  }
 }

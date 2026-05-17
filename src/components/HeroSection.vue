@@ -48,7 +48,7 @@ const props = withDefaults(defineProps<Props>(), {
   titleTrailing: "and a developer's precision.",
   description:
     'I am a Frontend Developer specializing in building serene, highly-functional web experiences that feel as warm as a hand-drawn illustration.',
-  primaryAction: 'Explore Work',
-  secondaryAction: 'My Story'
+  primaryAction: 'Skills',
+  secondaryAction: 'Projects'
 });
 </script>
