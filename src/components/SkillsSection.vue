@@ -11,7 +11,7 @@
       <div class="skills-grid">
         <div v-for="skill in skills" :key="skill.name" class="skill-card">
           <div class="skill-icon" :style="{ backgroundColor: skill.bgColor }">
-            <span class="skill-icon-text">{{ skill.icon }}</span>
+            <img :src="skill.icon" :alt="skill.name" width="40" height="40" />
           </div>
           <h3 class="skill-name">{{ skill.name }}</h3>
         </div>
@@ -30,33 +30,28 @@ interface Skill {
 const skills: Skill[] = [
   {
     name: 'Next.js',
-    icon: 'Next',
-    bgColor: 'rgba(54,65,89,0.08)',
+    icon: '/nextjs.png',
+    bgColor: 'transparent',
   },
   {
     name: 'Tailwind',
-    icon: 'TW',
-    bgColor: 'rgba(56,189,248,0.14)',
-  },
-  {
-    name: 'Laravel',
-    icon: 'Lv',
-    bgColor: 'rgba(245,101,101,0.14)',
+    icon: '/tailwind-css.png',
+    bgColor: 'transparent',
   },
   {
     name: 'TypeScript',
-    icon: 'TS',
-    bgColor: 'rgba(49,120,198,0.14)',
+    icon: '/typescript.png',
+    bgColor: 'transparent',
   },
   {
     name: 'HTML',
-    icon: '</>',
-    bgColor: 'rgba(251,146,60,0.14)',
+    icon: '/html5.png',
+    bgColor: 'transparent',
   },
   {
     name: 'CSS',
-    icon: 'CSS',
-    bgColor: 'rgba(56,189,248,0.14)',
+    icon: '/css3.png',
+    bgColor: 'transparent',
   },
 ]
 </script>
