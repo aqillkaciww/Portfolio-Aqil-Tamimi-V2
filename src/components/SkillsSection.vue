@@ -36,7 +36,15 @@
 </template>
 
 <script setup lang="ts">
-const skills = [
+interface Skill {
+  name: string
+  icon: string
+  bgColor: string
+  desc: string
+  tags: string[]
+}
+
+const skills: Skill[] = [
   {
     name: 'React & Next.js',
     icon: '⚛',

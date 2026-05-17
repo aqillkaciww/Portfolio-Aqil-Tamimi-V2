@@ -2,16 +2,16 @@
   <section class="hero-section">
     <div class="hero-inner">
       <div class="hero-copy">
-        <span class="hero-label">{{ pretitle }}</span>
+        <span class="hero-label">{{ props.pretitle }}</span>
         <h1 class="hero-title">
-          {{ titleLeading }} <span class="hero-title-accent">{{ titleAccent }}</span>
-          {{ titleTrailing }}
+          {{ props.titleLeading }} <span class="hero-title-accent">{{ props.titleAccent }}</span>
+          {{ props.titleTrailing }}
         </h1>
-        <p class="hero-description">{{ description }}</p>
+        <p class="hero-description">{{ props.description }}</p>
 
         <div class="hero-actions">
-          <button class="hero-button hero-button-primary">{{ primaryAction }}</button>
-          <button class="hero-button hero-button-secondary">{{ secondaryAction }}</button>
+          <button class="hero-button hero-button-primary">{{ props.primaryAction }}</button>
+          <button class="hero-button hero-button-secondary">{{ props.secondaryAction }}</button>
         </div>
       </div>
 

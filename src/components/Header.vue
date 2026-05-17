@@ -3,15 +3,15 @@
     <div class="header-container">
       <!-- Logo/Brand -->
       <div class="logo">
-        <a :href="headHref" class="logo-link" aria-label="Home">
-          <span class="head-name">{{ headName }}</span>
+        <a :href="props.headHref" class="logo-link" aria-label="Home">
+          <span class="head-name">{{ props.headName }}</span>
         </a>
       </div>
 
       <!-- Navigation Menu -->
       <nav class="nav-menu">
         <ul class="nav-list">
-          <li v-for="item in navItems" :key="item" class="nav-item">
+          <li v-for="item in props.navItems" :key="item" class="nav-item">
             <a href="#" class="nav-link">{{ item }}</a>
           </li>
         </ul>
@@ -37,7 +37,7 @@
             <line x1="16" y1="17" x2="8" y2="17"></line>
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
-          Download CV
+          {{ props.ctaText }}
         </div>
       </button>
     </div>
@@ -45,6 +45,8 @@
 </template>
 
 <script setup lang="ts">
+defineOptions({ name: 'AppHeader' })
+
 interface Props {
   headName?: string;
   navItems?: string[];

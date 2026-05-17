@@ -10,10 +10,9 @@
 
       <div class="timeline">
         <div
-          v-for="(item, index) in experiences"
+          v-for="item in experiences"
           :key="item.id"
           class="timeline-item"
-          :class="{ 'timeline-item-right': index % 2 !== 0 }"
         >
           <div class="timeline-dot">
             <div class="timeline-dot-inner"></div>
@@ -42,7 +41,17 @@
 </template>
 
 <script setup lang="ts">
-const experiences = [
+interface Experience {
+  id: number
+  role: string
+  company: string
+  start: string
+  end: string
+  desc: string
+  tags: string[]
+}
+
+const experiences: Experience[] = [
   {
     id: 1,
     role: 'Senior Frontend Developer',
@@ -58,7 +67,7 @@ const experiences = [
     company: 'Startup Agency',
     start: '2022',
     end: '2024',
-    desc: 'Crafting front-end for creative agencies. Building UI components and responsive layouts that tell their clients\' stories with precision and flair.',
+    desc: "Crafting front-end for creative agencies. Building UI components and responsive layouts that tell their clients' stories with precision and flair.",
     tags: ['React', 'GSAP', 'Tailwind CSS']
   },
   {

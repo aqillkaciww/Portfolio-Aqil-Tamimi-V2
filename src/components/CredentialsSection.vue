@@ -42,7 +42,19 @@
 </template>
 
 <script setup lang="ts">
-const certifications = [
+interface Certification {
+  name: string
+  issuer: string
+  year: string
+}
+
+interface Education {
+  name: string
+  institution: string
+  year: string
+}
+
+const certifications: Certification[] = [
   {
     name: 'React Advanced License',
     issuer: 'Meta / Coursera',
@@ -60,7 +72,7 @@ const certifications = [
   }
 ]
 
-const education = [
+const education: Education[] = [
   {
     name: 'S1 Ilmu Komputer',
     institution: 'Universitas of Lampung',
