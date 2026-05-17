@@ -16,7 +16,7 @@
       </nav>
 
       <!-- CTA Button -->
-      <button class="cta-button" @click="handleHireClick">
+      <button class="cta-button" @click="handleDownloadClick">
         {{ ctaText }}
       </button>
     </div>
@@ -33,11 +33,11 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   headName: 'Aqil Tamimi',
   navItems: () => ['Work', 'Process', 'About', 'Contact'],
-  ctaText: 'Hire Me'
+  ctaText: 'Download CV'
 });
 
-const handleHireClick = () => {
-  console.log('Hire button clicked');
+const handleDownloadClick = () => {
+  console.log('Download CV button clicked');
 };
 </script>
 
