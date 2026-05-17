@@ -1,11 +1,6 @@
 <template>
   <section class="cred-section" id="credentials">
     <div class="cred-inner">
-      <!-- Certifications -->
-      <!-- <div class="section-header">
-        <h2 class="section-title">Credentials</h2>
-        <p class="section-subtitle">My achievements and educational background</p>
-      </div> -->
 
       <div class="cred-col">
         <div class="cred-header">
@@ -51,6 +46,7 @@ interface Certification {
   name: string
   issuer: string
   year: string
+  link: string
 }
 
 interface Education {
@@ -63,12 +59,12 @@ const certifications: Certification[] = [
   {
     name: 'MikroTik Certified Network Associate (MTCNA)',
     issuer: 'MikroTik',
-    year: '2025'
+    year: '2025',
   },
   {
     name: 'Technoversary - EcoDigital for Environment',
     issuer: 'HIMATI UNIKU',
-    year: '2025'
+    year: '2025',
   }
 ]
 
