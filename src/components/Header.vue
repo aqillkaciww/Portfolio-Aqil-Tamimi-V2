@@ -17,7 +17,7 @@
         </ul>
       </nav>
 
-      <!-- CTA Button replaced by download-button -->
+      <!-- CTA Button -->
       <button class="download-button" @click="handleDownloadClick">
         <div class="docs">
           <svg
