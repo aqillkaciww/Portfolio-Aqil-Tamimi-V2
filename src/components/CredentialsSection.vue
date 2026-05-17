@@ -56,32 +56,22 @@ interface Education {
 
 const certifications: Certification[] = [
   {
-    name: 'React Advanced License',
-    issuer: 'Meta / Coursera',
-    year: '2024'
+    name: 'MikroTik Certified Network Associate (MTCNA)',
+    issuer: 'MikroTik',
+    year: '2025'
   },
   {
-    name: 'Google UI Design',
-    issuer: 'Google / Coursera',
-    year: '2023'
-  },
-  {
-    name: 'Belajar Front-end (Dicoding)',
-    issuer: 'Dicoding Indonesia',
-    year: '2022'
+    name: 'Technoversary - EcoDigital for Environment',
+    issuer: 'HIMATI UNIKU',
+    year: '2025'
   }
 ]
 
 const education: Education[] = [
   {
-    name: 'S1 Ilmu Komputer',
-    institution: 'Universitas of Lampung',
-    year: '2022–Now'
-  },
-  {
-    name: 'SMK Jurusan IT',
-    institution: 'SMK Teknologi',
-    year: '2019–2022'
+    name: 'Sistem Informasi Jaringan dan Aplikasi',
+    institution: 'SMK Negeri 2 Yogyakarta',
+    year: '2023–Now'
   }
 ]
 </script>

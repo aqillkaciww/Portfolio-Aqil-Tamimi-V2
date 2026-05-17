@@ -10,8 +10,8 @@
         <p class="hero-description">{{ props.description }}</p>
 
         <div class="hero-actions">
-          <button class="hero-button hero-button-primary">{{ props.primaryAction }}</button>
-          <button class="hero-button hero-button-secondary">{{ props.secondaryAction }}</button>
+          <button class="hero-button hero-button-primary" @click="handlePrimaryClick">{{ props.primaryAction }}</button>
+          <button class="hero-button hero-button-secondary" @click="handleSecondaryClick">{{ props.secondaryAction }}</button>
         </div>
       </div>
 

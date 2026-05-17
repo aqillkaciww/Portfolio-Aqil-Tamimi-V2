@@ -3,7 +3,7 @@ import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
-import ExperienceSection from './components/ExperienceSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
 import CredentialsSection from './components/CredentialsSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import FooterSection from './components/FooterSection.vue'
@@ -15,10 +15,9 @@ import FooterSection from './components/FooterSection.vue'
     <HeroSection />
     <AboutSection />
     <SkillsSection />
-    <ExperienceSection />
+    <ProjectsSection />
     <CredentialsSection />
     <ContactSection />
   </main>
   <FooterSection />
 </template>
-

@@ -11,8 +11,8 @@
       <!-- Navigation Menu -->
       <nav class="nav-menu">
         <ul class="nav-list">
-          <li v-for="item in props.navItems" :key="item" class="nav-item">
-            <a href="#" class="nav-link">{{ item }}</a>
+          <li v-for="item in navLinks" :key="item.label" class="nav-item">
+            <a :href="item.href" class="nav-link">{{ item.label }}</a>
           </li>
         </ul>
       </nav>
@@ -47,6 +47,11 @@
 <script setup lang="ts">
 defineOptions({ name: 'AppHeader' })
 
+interface NavLink {
+  label: string;
+  href: string;
+}
+
 interface Props {
   headName?: string;
   navItems?: string[];
@@ -58,12 +63,24 @@ const props = withDefaults(defineProps<Props>(), {
   headName: 'Aqil Tamimi',
   navItems: () => ['Work', 'Process', 'About', 'Contact'],
   ctaText: 'Download CV',
-  headHref: '/'
+  headHref: '#',
 });
 
+// Map navbar items ke section IDs
+const navLinks: NavLink[] = [
+  { label: 'Work', href: '#experience' },
+  { label: 'Process', href: '#skills' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+];
+
 const handleDownloadClick = () => {
-  console.log('Download CV button clicked');
+  const link = document.createElement('a');
+  link.href = '/Aqil-Tamimi-CV.pdf';         // path relatif dari folder public/
+  link.download = 'Aqil-Tamimi-CV.pdf';  // nama file saat didownload
+  link.click();
 };
+
 </script>
 
 

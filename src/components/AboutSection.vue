@@ -3,23 +3,23 @@
     <div class="about-inner">
       <!-- Left: Text Content -->
       <div class="about-copy">
-        <h2 class="section-title">The Story Behind<br />the Screen</h2>
+        <h2 class="section-title">Tentang Saya</h2>
         <p class="about-text">
-          My journey began with a sketchbook, but with a curvature. I discovered the intersection between art and code — the time of a hand-written journal finding life in a beautiful digital form.
+          Saya saat ini menempuh pendidikan di SMKN 2 Yogyakarta dengan jurusan Sistem Informatika Jaringan dan Aplikasi (SIJA). Perjalanan saya di dunia teknologi dimulai dari rasa penasaran yang besar terhadap cara kerja sebuah website, yang kemudian berkembang menjadi ketertarikan mendalam pada pengembangan frontend dan desain antarmuka pengguna.
         </p>
         <p class="about-text">
-          I believe that aesthetics don't just please the eye — they communicate. That aesthetics isn't just about looks, it's about creating digital homes to harbor that value you are creating.
+          Saya menikmati lingkungan yang mempertemukan logika dan kreativitas. Dengan memanfaatkan framework modern serta sistem desain yang terstruktur, saya berusaha membangun aplikasi web yang tidak hanya memiliki performa optimal, tetapi juga mampu menghadirkan pengalaman pengguna yang premium, nyaman, dan mulus tanpa hambatan.
         </p>
         <div class="about-location">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
-          <span>Bandar Lampung, Indonesia</span>
+          <span>D.I. Yogyakarta Indonesia</span>
         </div>
       </div>
 
-      <!-- Right: Image Grid -->
+      <!-- Image -->
       <div class="about-grid">
         <div class="about-img about-img-main">
           <div class="img-placeholder img-desk">

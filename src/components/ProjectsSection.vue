@@ -1,6 +1,6 @@
 <template>
-  <section class="experience-section" id="experience">
-    <div class="experience-inner">
+  <section class="pro-section" id="projects">
+    <div class="projects-inner">
       <div class="section-header">
         <h2 class="section-title center">The Journey So Far</h2>
         <p class="section-subtitle">
@@ -10,7 +10,7 @@
 
       <div class="timeline">
         <div
-          v-for="item in experiences"
+          v-for="item in projects"
           :key="item.id"
           class="timeline-item"
         >
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-interface Experience {
+interface Project {
   id: number
   role: string
   company: string
@@ -51,7 +51,7 @@ interface Experience {
   tags: string[]
 }
 
-const experiences: Experience[] = [
+const projects: Project[] = [
   {
     id: 1,
     role: 'Senior Frontend Developer',
@@ -69,15 +69,6 @@ const experiences: Experience[] = [
     end: '2024',
     desc: "Crafting front-end for creative agencies. Building UI components and responsive layouts that tell their clients' stories with precision and flair.",
     tags: ['React', 'GSAP', 'Tailwind CSS']
-  },
-  {
-    id: 3,
-    role: 'Junior Web Crafter',
-    company: 'Early Stage Agency',
-    start: '2020',
-    end: '2022',
-    desc: 'First hands-on experience with HTML, CSS and JavaScript, learning the most beautiful things that the web has to offer through passionate mentors.',
-    tags: ['HTML', 'CSS', 'JavaScript']
   }
 ]
 </script>

@@ -2,9 +2,9 @@
   <section class="skills-section" id="skills">
     <div class="skills-inner">
       <div class="section-header">
-        <h2 class="section-title center">The Toolset</h2>
+        <h2 class="section-title center">Tech Stack</h2>
         <p class="section-subtitle">
-          My craft is built with intentional tools, carefully chosen frameworks, and a love for well-structured elegance that breathes life into the experience.
+        Teknologi yang saya gunakan dalam pengembangan website yang interaktif juga responsif.
         </p>
       </div>
 
