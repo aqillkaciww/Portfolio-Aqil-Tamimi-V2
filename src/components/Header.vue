@@ -3,7 +3,7 @@
     <div class="header-container">
       <!-- Logo/Brand -->
       <div class="logo">
-        <span class="brand-name">{{ brandName }}</span>
+        <span class="head-name">{{ headName }}</span>
       </div>
 
       <!-- Navigation Menu -->
@@ -25,20 +25,19 @@
 
 <script setup lang="ts">
 interface Props {
-  brandName?: string;
+  headName?: string;
   navItems?: string[];
   ctaText?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  brandName: 'Starlit Studio',
+  headName: 'Aqil Tamimi',
   navItems: () => ['Work', 'Process', 'About', 'Contact'],
   ctaText: 'Hire Me'
 });
 
 const handleHireClick = () => {
-  console.log('Hire Me button clicked');
-  // Nanti bisa ditambah navigasi ke contact section
+  console.log('Hire button clicked');
 };
 </script>
 
