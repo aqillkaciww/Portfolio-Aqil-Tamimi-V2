@@ -2,6 +2,11 @@
   <section class="cred-section" id="credentials">
     <div class="cred-inner">
       <!-- Certifications -->
+      <!-- <div class="section-header">
+        <h2 class="section-title">Credentials</h2>
+        <p class="section-subtitle">My achievements and educational background</p>
+      </div> -->
+
       <div class="cred-col">
         <div class="cred-header">
           <span class="cred-icon">🏅</span>

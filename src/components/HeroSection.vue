@@ -4,8 +4,7 @@
       <div class="hero-copy">
         <span class="hero-label">{{ props.pretitle }}</span>
         <h1 class="hero-title">
-          {{ props.titleLeading }} <span class="hero-title-accent">{{ props.titleAccent }}</span>
-          {{ props.titleTrailing }}
+          {{ props.titleLeading }} <br> <span>{{ props.titleTrailing }}</span>
         </h1>
         <p class="hero-description">{{ props.description }}</p>
 
@@ -16,15 +15,16 @@
       </div>
 
       <div class="hero-card">
-        <div class="art-card">
-          <div class="art-sky"></div>
-          <div class="art-cloud art-cloud-1"></div>
-          <div class="art-cloud art-cloud-2"></div>
-          <div class="art-hills"></div>
-          <div class="art-forest"></div>
-          <div class="art-house"></div>
-        </div>
-        <div class="hero-quote">"Code is poetry in motion."</div>
+        <img src="/ijinkompe.png" alt="Aqil Tamimi" class="hero-photo"/>
+          <!-- <div class="art-card">
+            <div class="art-sky"></div>
+            <div class="art-cloud art-cloud-1"></div>
+            <div class="art-cloud art-cloud-2"></div>
+            <div class="art-hills"></div>
+            <div class="art-forest"></div>
+            <div class="art-house"></div>
+          </div> -->
+        <div class="hero-quote">"I can't lose, I'm chosen!"</div>
       </div>
     </div>
   </section>
@@ -34,7 +34,6 @@
 interface Props {
   pretitle?: string;
   titleLeading?: string;
-  titleAccent?: string;
   titleTrailing?: string;
   description?: string;
   primaryAction?: string;
@@ -43,9 +42,8 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   pretitle: '</> Hello World!',
-  titleLeading: "Crafting digital spaces with a",
-  titleAccent: "painter's touch",
-  titleTrailing: "and a developer's precision.",
+  titleLeading: "Designing the future,",
+  titleTrailing: "one line at a time.",
   description:
     'I am a Frontend Developer specializing in building serene, highly-functional web experiences that feel as warm as a hand-drawn illustration.',
   primaryAction: 'Skills',

@@ -61,17 +61,18 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   headName: 'Aqil Tamimi',
-  navItems: () => ['Work', 'Process', 'About', 'Contact'],
+  navItems: () => ['Work', 'Process', 'About', 'Certificate & Education', 'Contact'],
   ctaText: 'Download CV',
   headHref: '#',
 });
 
 // Map navbar items ke section IDs
 const navLinks: NavLink[] = [
-  { label: 'Work', href: '#experience' },
-  { label: 'Process', href: '#skills' },
   { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Tech', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Certificate & Education', href: '#credentials' },
+  { label: 'Contact', href: '#contact' }
 ];
 
 const handleDownloadClick = () => {
