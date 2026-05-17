@@ -46,7 +46,6 @@ interface Certification {
   name: string
   issuer: string
   year: string
-  link: string
 }
 
 interface Education {
